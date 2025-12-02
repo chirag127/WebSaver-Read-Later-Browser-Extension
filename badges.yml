@@ -1,0 +1,23 @@
+build_status:
+  provider: github_actions
+  workflow_name: CI
+  branch: main
+  # Example: https://github.com/chirag127/WebSave-AI-Powered-Read-It-Later-Browser-Extension/actions/workflows/ci.yml
+coverage:
+  provider: codecov
+  # Example: https://codecov.io/gh/chirag127/WebSave-AI-Powered-Read-It-Later-Browser-Extension
+tech_stack_javascript:
+  # Example: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+tech_stack_typescript:
+  # Example: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=FFFFFF
+tech_stack_node:
+  # Example: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=FFFFFF
+tech_stack_mongodb:
+  # Example: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=FFFFFF
+tech_stack_expressjs:
+  # Example: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=FFFFFF
+license:
+  license: CC BY-NC 4.0
+  # Example: https://img.shields.io/badge/License-CC BY-NC 4.0-blue.svg?style=flat-square
+# The 'github_stars' badge is typically placed directly in the README and not configured here,
+# but can be added if a specific badge service supports dynamic configuration.
