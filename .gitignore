@@ -1,27 +1,35 @@
-# Dependencies
-node_modules/
-
-# Environment variables
-.env
-
-# Build artifacts
+# Dependency Directories
+/node_modules
 /dist
 /build
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Environment Variables
+.env
+.env.*.local
+
+# Build Artifacts (Vite/Rollup)
+/coverage
+/temp
+
+# Browser Extension Artifacts
+*.crx
+*.xpi
+
+# Logs and Temp Files
+*.log
+*.tmp
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.swp
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Editor directories and files
-.idea
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Source Maps
+*.map
+
+# Testing Artifacts
+/test-results
