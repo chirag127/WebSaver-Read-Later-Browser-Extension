@@ -1,68 +1,112 @@
 # Contributing to WebSaver-Read-Later-Browser-Extension
 
-Thank you for considering contributing to the WebSaver-Read-Later-Browser-Extension project!
+Thank you for considering contributing to `WebSaver-Read-Later-Browser-Extension`! We aim to maintain a high standard of quality, velocity, and future-proofing, aligning with the Apex Technical Authority's principles.
 
-## 🚀 Our Commitment
+## 1. Code of Conduct
 
-We aim to foster a collaborative and inclusive environment. All contributions are welcome and valued, adhering to the principles of Zero-Defect, High-Velocity, and Future-Proof development as defined by the Apex Technical Authority.
+This project adheres to the Contributor Covenant Code of Conduct. Please read the full [CODE_OF_CONDUCT.md](https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension/blob/main/CODE_OF_CONDUCT.md) to understand the expected behavior.
 
-## 📜 Code of Conduct
+## 2. How to Contribute
 
-This project adheres to a Code of Conduct. By participating, you are expected to uphold this code. Please read the full [Code of Conduct](https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension/blob/main/CODE_OF_CONDUCT.md) to understand what actions are encouraged and unacceptable.
+We welcome contributions in the form of:
 
-## 💡 How to Contribute
+*   **Bug Reports:** If you find a bug, please open an issue using the `bug_report.md` template.
+*   **Feature Requests:** Suggest new features by opening an issue.
+*   **Code Contributions:** Submit pull requests for bug fixes or new features.
+*   **Documentation Improvements:** Help us keep our documentation up-to-date.
 
-### 1. Reporting Bugs
+## 3. Development Workflow
 
-If you find a bug, please report it by submitting a new issue on GitHub. Ensure your issue includes:
+Our development workflow is designed for high velocity and zero defects, utilizing the latest industry standards for late 2025.
 
-*   A clear, descriptive title.
-*   A detailed description of the bug, including steps to reproduce it.
-*   The expected behavior versus the actual behavior.
-*   Relevant environment details (browser version, operating system).
-*   Screenshots or error logs if applicable.
+### 3.1. Setup
 
-### 2. Suggesting Enhancements
+1.  **Fork the repository:** Click the 'Fork' button on the GitHub page.
+2.  **Clone your fork:**
+    bash
+    git clone https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension.git
+    cd WebSaver-Read-Later-Browser-Extension
+    
+3.  **Set upstream remote:**
+    bash
+    git remote add upstream https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension.git
+    
+4.  **Create a new branch:** For your feature or fix:
+    bash
+    git checkout -b feature/your-feature-name
+    
 
-We welcome feature requests and suggestions for improvement. Please submit them as GitHub issues with a clear title and a detailed explanation of the proposed enhancement and its benefits.
+### 3.2. Technology Stack (Late 2025 Standards)
 
-### 3. Submitting Pull Requests
+This project is built using modern JavaScript, leveraging a robust stack suitable for browser extensions:
 
-We accept pull requests (PRs) for bug fixes and new features. To ensure a smooth review process:
+*   **Language:** JavaScript (ES2025+)
+*   **Build Tool:** Vite (v7+)
+*   **Frontend Framework/Libraries:** (Specify if applicable, e.g., React, Vue, or Vanilla JS)
+*   **Styling:** TailwindCSS (v4+)
+*   **Backend (for storage/sync):** Node.js (LTS), Express.js
+*   **Database:** MongoDB
+*   **Extension API:** WebExtension APIs
 
-*   **Fork the repository:** Create your own fork of the project.
-*   **Create a new branch:** For your feature or bug fix (e.g., `feature/add-new-saving-option` or `fix/login-bug`).
-*   **Develop and test:** Make your changes, ensuring they follow the project's coding standards and pass all tests.
-*   **Add tests:** Write new tests or update existing ones to cover your changes.
-*   **Lint and format:** Ensure your code is clean and adheres to project formatting standards.
-*   **Commit your changes:** Use conventional commit messages for clarity.
-*   **Submit a Pull Request:** Open a PR against the `main` branch of the original repository.
+### 3.3. Linting and Formatting
 
-#### Branching Strategy & Commit Messages
+We use **Biome** for ultra-fast linting and formatting to ensure code consistency and quality. All code committed must pass Biome checks.
 
-We follow a simplified version of GitFlow for branches and Conventional Commits for messages:
+*   **Install Biome:** (Ensure Biome is installed as per `package.json` dev dependencies)
+*   **Run Linter/Formatter:**
+    bash
+    npm run lint
+    # or
+    npm run format
+    
 
-*   **Branches:** `main` (production-ready), `develop` (integration), feature branches (e.g., `feature/xxx`), hotfix branches (e.g., `hotfix/xxx`).
-*   **Commit Message Format:** `type(scope): description`
-    *   `type`: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `test`, `ci`, `build`.
-    *   `scope` (optional): The part of the codebase affected (e.g., `api`, `ui`, `parser`).
-    *   `description`: A concise summary of the change.
+### 3.4. Testing
 
-#### Development Environment Setup
+Quality is paramount. We use **Vitest** for unit testing and **Playwright** for end-to-end (E2E) testing.
 
-Refer to the `README.md` for detailed instructions on setting up the development environment, installing dependencies, and running the project locally.
+*   **Run Unit Tests:**
+    bash
+    npm run test:unit
+    
+*   **Run E2E Tests:**
+    bash
+    npm run test:e2e
+    
 
-## 🤝 Apex Architecture & Standards
+### 3.5. Building the Extension
 
-This project adheres to the Apex Technical Authority's guidelines:
+To build the production-ready extension:
 
-*   **Tech Stack:** JavaScript, HTML, CSS, Node.js, Express.js, MongoDB. For browser extensions, modern frontend best practices are expected.
-*   **Architecture:** Maintainability, scalability, and robustness are key. Focus on clean code, modular design, and adherence to established design patterns (e.g., SOLID principles where applicable).
-*   **Testing:** Comprehensive testing (unit, integration, E2E) is critical. Ensure new code is well-tested.
-*   **CI/CD:** All contributions should integrate seamlessly with the CI/CD pipeline defined in `.github/workflows/ci.yml`.
+bash
+npm run build
 
-## ❓ Questions?
 
-If you have any questions or need clarification on contributing, please open an issue or reach out to the maintainer.
+## 4. Pull Request Process
 
-Thank you for helping to make `WebSaver-Read-Later-Browser-Extension` a fantastic project!
+1.  **Ensure your branch is up-to-date** with the main branch:
+    bash
+    git fetch upstream
+    git merge upstream/main
+    
+2.  **Run all tests** and ensure they pass.
+3.  **Lint and format** your code using `npm run lint` and `npm run format`.
+4.  **Commit your changes** with clear and concise messages.
+5.  **Open a Pull Request** against the `main` branch of the `chirag127/WebSaver-Read-Later-Browser-Extension` repository.
+6.  **Provide a clear description** of your changes, referencing any related issues.
+
+## 5. Architectural Principles
+
+We adhere to the following principles:
+
+*   **SOLID:** Maintainable and scalable code.
+*   **DRY:** Don't Repeat Yourself.
+*   **YAGNI:** You Ain't Gonna Need It – focus on necessary features.
+*   **Zero-Defect:** Strive for bug-free code through rigorous testing and code reviews.
+*   **High-Velocity:** Efficient development and deployment cycles.
+*   **Future-Proof:** Design for extensibility and maintainability.
+
+## 6. Reporting Security Vulnerabilities
+
+If you discover a security vulnerability, please follow our security policy outlined in [SECURITY.md](https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension/blob/main/SECURITY.md).
+
+---
